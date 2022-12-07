@@ -1,0 +1,46 @@
+.card-slide{
+    background:#fbfbfb;
+    width:100%;
+    height:65px;
+    box-shadow: 2px 2px 2px 2px #ddd inset;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.card-slide_bar{
+    width:750px;
+    height:55px;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    position:relative;
+    overflow: hidden;
+    z-index:98;
+   
+    
+}
+.card-slide_bar_itemslist{
+    width:100%;
+    height:800%;
+    position:absolute;
+    top:0; left:0;
+    padding:0 20px;
+    box-sizing: border-box;
+    z-index:98;
+}
+
+.card-slide_bar_itemslist a{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:55px;
+    background-color: #ffffff;
+}
+.card-slide_bar_item-leftwrap{
+    display: flex;
+    align-items: center;
+}
+.card-slide_bar_itemslist a img{
+    width:45px;
+    height:30px;
+}

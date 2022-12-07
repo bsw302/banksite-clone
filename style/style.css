@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* import */
+@import "./header.css";
+@import "./reset.css";
+@import "./image-slide.css";
+@import "./card-slide.css";
+
+body{
+    width:100%;
+}
+
+
+

@@ -1,0 +1,198 @@
+header{font-size:13px;}
+
+/* display */
+.show{display:block;}
+.hide{display:none;}
+
+
+/* header-top */
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    width:100%; 
+    height:35px; 
+    background:#fbfbfb;
+    border-bottom:2px solid #eeeeee; 
+    box-sizing: border-box;
+}
+.wrap-left{
+    display: flex; 
+    align-items:center;
+    margin-left:20px;
+    position:relative;
+}
+.header-top_download{
+    width:150px;
+    height:25px;
+    background-color:#ffffff;
+    border-radius:5px;
+    border: 1px solid #eeeeee;
+    text-align:center;
+    line-height:25px;
+}
+.header-top_download .open1{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+.header-top_download_box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:185px;
+    height:145px; 
+    background-color:#ffffff;
+    box-shadow: 2px 2px 2px 2px #ddd;
+    position:absolute; top:40px;
+    display:none;
+} 
+.header-top_download_box img {
+    width:100%; 
+    height:100%;
+}
+.header-top_download span{
+    color:#c0c0c0;
+    box-sizing: border-box;
+    margin-left:5px;
+}
+.header-top_identy{
+    width:80px; 
+    height:25px;
+    background:#ffffff;
+    border-radius:5px;
+    border: 1px solid #eeeeee;
+    margin-left:10px;
+}
+.header-top_identy a{
+    color:#b1b1b1;
+    display: block;
+    text-align:center;
+    line-height:25px;
+    font-size:12px;
+}
+.wrap-right{
+    display: flex;
+    align-items:center;
+    width:400px;
+}
+.header-top_lefttap_culumn{
+    border-right:1px solid #c0c0c0;
+    padding-right:20px;
+    color:#333333;
+    margin-left:20px;
+    font-size:11px;
+}
+.header-top_lefttap_culumn:last-child{
+    border-right:none;
+}
+
+
+/* header-bottom */
+.header-bottom{
+    display:flex;
+    width:100%;
+    height:55px; 
+    box-shadow:2px 2px 2px 2px  #ddd;
+    background:#ffffff;
+}
+.header-bottom_logo{
+    width:200px; 
+    height:100%;
+}
+.header-bottom_logo a{
+    display:block; 
+    width:100%;
+    height:100%;
+    color:#000;
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    line-height:55px;
+}
+.header-bottom_nav ul{
+    display:flex;
+    align-items:center;
+    margin-top:5px;
+    
+}
+.header-bottom_nav_mainnav{
+    display:block; 
+    width:100px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    font-size:15px;
+}
+
+.new{
+    padding:0px 3px;
+    margin-left:3px;
+    width:20px;
+    height:20px;
+    background-color:tomato;
+    color:#fff;
+    font-weight:600;
+    font-size:11px;
+    border-radius: 3px;
+}
+.header-bottom_nav_mainnav:hover{
+    color:#00CD80;
+    font-weight:bold;
+}
+
+
+
+/* 서브네비 */
+.subnav-wrap{
+    display:none;
+    z-index:99;
+}
+.header-bottom_nav_subnav{
+    background-color:#fbfbfb;
+    display:flex;
+    position:absolute; 
+    width:100%;
+    height:350px;
+    left:0; 
+    top:95px;
+    z-index:99;
+}
+.header-bottom_nav_subnav_culumn{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    padding:20px 0;
+    z-index:99;
+}
+.header-bottom_nav_subnav_culumn:first-child{
+    margin-left:220px;
+}
+.header-bottom_nav_subnav_culumn:nth-child(2),
+.header-bottom_nav_subnav_culumn:nth-child(3),
+.header-bottom_nav_subnav_culumn:last-child{
+    margin-left:100px;
+}
+.header-bottom_nav_subnav_culumn ul{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.header-bottom_nav_subnav_culumn h6{
+    font-size: 15px;
+    margin-bottom:15px;
+    font-weight: 600;
+} 
+.header-bottom_nav_subnav_culumn ul li {
+    margin-bottom:15px;
+}
+.header-bottom_nav_subnav_culumn ul li a{
+    color:#777;
+    font-weight:bold;
+}
+.header-bottom_nav_subnav_culumn ul li a:hover{
+    color:#00CD80;
+}
+
+
+
