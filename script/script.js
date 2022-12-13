@@ -11,7 +11,7 @@ $(document).ready(function(){
         });
     });
 });
-
+  
 
 
 $(document).ready(function(){
@@ -31,7 +31,7 @@ $(document).ready(function(){
     //카드 슬라이드
     var num = 1;
 
-    setInterval(function(){
+        var interval = setInterval(function(){
         if(num < 8){
             num++;
             $('.card-slide_bar_itemslist').animate({
@@ -44,4 +44,48 @@ $(document).ready(function(){
             },'slow');
         }
     },3000);
+
+
+    $('.card-slide_bar').hover(function(){
+        $('.card-slide_bar').addClass('active_visible');
+        $('.card-slide_bar_itemslist').animate({top:0},'0')
+        clearInterval(interval);
+    },function(){
+        $('.card-slide_bar').removeClass('active_visible');
+
+        interval = setInterval(function(){
+            if(num < 8){
+                num++;
+                $('.card-slide_bar_itemslist').animate({
+                    top: '-=55px'
+                },'slow');
+            }else{
+                num = 1;
+                $('.card-slide_bar_itemslist').animate({
+                    top: 0
+                },'slow');
+            }
+        },3000);
+    });     
 });
+
+
+
+$(document).ready(function(){
+    //이미지 슬라이드
+    var num = 1; 
+    
+    setInterval(function(){
+        if(num < 3){
+            num++;
+            $('.image-slide_slidewrap').animate({
+                left:'-=100%'
+            },'slow');
+        }else{
+            num = 1;
+            $('.image-slide_slidewrap').animate({
+                left:0
+            },'slow');
+        }
+    },5000)
+})

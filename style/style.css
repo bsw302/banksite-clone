@@ -5,7 +5,11 @@
 @import "./reset.css";
 @import "./image-slide.css";
 @import "./card-slide.css";
+@import "./card-slide-hoverpage.css";
+@import "./promotion.css";
 
+
+/* bottom border :#fbfbfb */
 body{
     width:100%;
 }

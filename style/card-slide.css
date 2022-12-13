@@ -1,7 +1,8 @@
 .card-slide{
+    padding-top:90px;
     background:#fbfbfb;
     width:100%;
-    height:65px;
+    height:80px;
     box-shadow: 2px 2px 2px 2px #ddd inset;
     display: flex;
     justify-content:center;
@@ -14,18 +15,20 @@
     border: 1px solid #eee;
     position:relative;
     overflow: hidden;
-    z-index:98;
-   
-    
+    z-index:98; 
+}
+.active_visible{
+    overflow: visible;
 }
 .card-slide_bar_itemslist{
-    width:100%;
+    width:750px;
     height:800%;
     position:absolute;
     top:0; left:0;
-    padding:0 20px;
-    box-sizing: border-box;
     z-index:98;
+    box-sizing: border-box;
+    padding:0 20px;
+    background-color: #ffffff;
 }
 
 .card-slide_bar_itemslist a{
@@ -43,4 +46,26 @@
 .card-slide_bar_itemslist a img{
     width:45px;
     height:30px;
+}
+.card-slide_bar_item-leftwrap h5{
+    color:#FD8700;
+    font-size: 20px;
+}
+.card-slide_bar_item-leftwrap p{
+    margin-left:20px;
+    margin-top:2px;
+    font-weight:500;
+}
+.card-slide_button a{
+    display:block;
+    width:110px;
+    height:50px;
+    background-color: #91B5BE;
+    margin-left:10px;
+    color:#fff;
+    line-height:50px;
+    text-align:center;
+    font-weight: bold;
+    font-size:13px;
+    border-radius: 2px;
 }
