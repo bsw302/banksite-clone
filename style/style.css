@@ -7,7 +7,7 @@
 @import "./card-slide.css";
 @import "./card-slide-hoverpage.css";
 @import "./promotion.css";
-
+@import "../style/pick.css";
 
 /* bottom border :#fbfbfb */
 body{

@@ -3,6 +3,8 @@
     height:450px;
     display: flex;
     justify-content:center;
+    background-color:#ffffff;
+    border-bottom: 15px solid #f5f5f5;  
 }
 .promotion_wrap{
     width:1000px;
@@ -11,7 +13,7 @@
 .promotion_wrap h2{
     margin-top:50px;
     text-align:center;
-    color:#b1b1b1;;
+    color:#b1b1b1;
     font-size:18px;
     font-weight:bold;
 }
@@ -35,4 +37,18 @@
 .promotion_articlelist img{
     width:100px;
     height:100px;
+    margin-bottom:20px;
+}
+.promotion_articlelist h5{
+    font-size:20px;
+}
+.promotion_articlelist p{
+    color:#b1b1b1;
+    text-align:center;
+    width:250px;
+    height:250px;
+    border-radius: 30px;
+    margin-top:10px;
+    font-size:15px;
+    font-weight:300;
 }

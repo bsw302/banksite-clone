@@ -88,4 +88,34 @@ $(document).ready(function(){
             },'slow');
         }
     },5000)
-})
+});
+
+
+$(document).ready(function(){
+    //pick-artice 버튼 
+    num = 1;
+
+    $('.pick-articlelist-display li').first().fadeIn(0);
+
+    $('.pick-articlelist_button_next').click(function(){
+        if(num < 3){
+            $('.pick-articlelist-display li').fadeOut(0);
+            $('.pick-articlelist-display li').eq(num).fadeIn(0);
+            num++;
+        }
+    });
+    $('.pick-articlelist_button_prev').click(function(){
+        if(num > 0){
+            $('.pick-articlelist-display li').fadeOut(0);
+            $('.pick-articlelist-display li').eq(num-1).fadeIn(0);
+            num--;
+        }else{
+            num = 3;
+            $('.pick-articlelist-display li').fadeOut(0);
+            $('.pick-articlelist-display li').last().fadeIn(0);
+            num--;
+        }
+        
+        });    
+
+})  
